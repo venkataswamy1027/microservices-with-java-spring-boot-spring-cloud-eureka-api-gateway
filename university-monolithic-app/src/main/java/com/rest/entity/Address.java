@@ -1,4 +1,4 @@
-package com.infybuzz.entity;
+package com.rest.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,6 +7,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Data;
+
+@Data
 @Entity
 @Table(name = "address")
 public class Address {
@@ -21,29 +24,5 @@ public class Address {
 
 	@Column(name = "city")
 	private String city;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getStreet() {
-		return street;
-	}
-
-	public void setStreet(String street) {
-		this.street = street;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
 
 }

@@ -1,14 +1,14 @@
-package com.infybuzz.service;
+package com.rest.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.infybuzz.entity.Address;
-import com.infybuzz.entity.Student;
-import com.infybuzz.repository.AddressRepository;
-import com.infybuzz.repository.StudentRepository;
-import com.infybuzz.request.CreateStudentRequest;
-import com.infybuzz.response.StudentResponse;
+import com.rest.entity.Address;
+import com.rest.entity.Student;
+import com.rest.repository.AddressRepository;
+import com.rest.repository.StudentRepository;
+import com.rest.request.CreateStudentRequest;
+import com.rest.response.StudentResponse;
 
 @Service
 public class StudentService {
